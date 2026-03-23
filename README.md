@@ -31,12 +31,19 @@ Step 2: Create and Configure an S3 Bucket :
 Step 3: Create a CI/CD Pipeline Using AWS CodePipeline
 
 *Go to the CodePipeline service. Click Create pipeline and Enter a pipeline name: CDA06pipelineTW.
+
 *For the Source Stage .Select “GitHub (app version)” as the source provider.
+
 *Connect to GitHub and authorize AWS CodePipeline to access your repository.
+
 *Select the repository and branch (main)
+
 *Skip the Build Stage by clicking Skip build stage and then Skip.
+
 *For the Deploy Stage .Select “Amazon S3” as the deployment provider.
+
 *Select your bucket: cicd-luit-project
+
 *Review the settings and click “Create pipeline.”
 
 ![1_-CxcjQ7jmQ_k3-YLvRtEDQ](https://github.com/user-attachments/assets/afe2b039-aad9-4bc3-a087-a0fff50b24ce)
