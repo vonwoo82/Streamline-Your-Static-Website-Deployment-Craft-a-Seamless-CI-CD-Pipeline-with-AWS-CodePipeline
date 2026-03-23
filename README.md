@@ -18,3 +18,32 @@ In this article, I’m committing changes directly to the main branch for simpli
 ensuring its stability.
 
  ![1_fMyFWN-iz-ZUeOGfxvb2gw](https://github.com/user-attachments/assets/d1319f3d-f1d6-44da-86fd-71c010526567)
+
+Step 2: Create and Configure an S3 Bucket :
+
+*Make sure static website hosting is Enabled
+*Block all public access should be turned OFF
+*Also update bucket policy accordingly .
+*Upload your HTML file
+
+![1_nYR76p8dM4q8fAoEPyX1RQ](https://github.com/user-attachments/assets/dbf7e5f7-b026-4560-a56f-3fadeecb702d)
+
+Step 3: Create a CI/CD Pipeline Using AWS CodePipeline
+
+*Go to the CodePipeline service. Click Create pipeline and Enter a pipeline name: CDA06pipelineTW.
+*For the Source Stage .Select “GitHub (app version)” as the source provider.
+*Connect to GitHub and authorize AWS CodePipeline to access your repository.
+*Select the repository and branch (main)
+*Skip the Build Stage by clicking Skip build stage and then Skip.
+*For the Deploy Stage .Select “Amazon S3” as the deployment provider.
+*Select your bucket: cicd-luit-project
+*Review the settings and click “Create pipeline.”
+
+![1_-CxcjQ7jmQ_k3-YLvRtEDQ](https://github.com/user-attachments/assets/afe2b039-aad9-4bc3-a087-a0fff50b24ce)
+
+Step 4: Verify and Update the Pipeline
+
+Make an update to the code in your GitHub repository and commit changes .
+The CodePipeline should automatically trigger upon this change
+
+If you found it helpful, don’t forget to show some love with a thumbs up — let’s get to it! 🙌
