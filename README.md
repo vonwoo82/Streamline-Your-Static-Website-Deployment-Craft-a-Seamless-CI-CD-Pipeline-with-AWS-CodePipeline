@@ -8,7 +8,15 @@ Our goal is to set up an automated deployment pipeline for a static website leve
 
 How It Works
 
-We’ll start by creating a new GitHub repository and uploading the website’s HTML files. Next, an S3 bucket will be set up to host the website. Finally, we’ll configure AWS CodePipeline to connect the GitHub repository with the S3 bucket. With this setup, any changes pushed to the GitHub repository will trigger the pipeline, automatically building and deploying the updated website to the S3 bucket. This automated process ensures your website stays up to date with minimal effort — just push your code, and the rest is handled for you!
+We’ll start by creating a new GitHub repository and uploading the website’s HTML files. 
+
+Next, an S3 bucket will be set up to host the website. 
+
+Finally, we’ll configure AWS CodePipeline to connect the GitHub repository with the S3 bucket. 
+
+With this setup, any changes pushed to the GitHub repository will trigger the pipeline, automatically building and deploying the updated website to the S3 bucket. 
+
+This automated process ensures your website stays up to date with minimal effort — just push your code, and the rest is handled for you!
 
 Let’s dive in and get started!
 
